@@ -1,5 +1,5 @@
 1 remote类的创建，本质是一个与远端程序交互的中间层
-    p = remote('host',port)   //分别是域名和端口
+    p = remote('host',port)   //分别是域名和程序端口
 
 2 数据发送
     p.send(data)    //发送原始数据
