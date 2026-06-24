@@ -1,4 +1,4 @@
-1 remote类是创建
+1 remote类的创建，本质是一个与远端程序交互的中间层
     p = remote('host',port)   //分别是域名和端口
 
 2 数据发送
@@ -6,4 +6,11 @@
     p.sendline(data)    //发送数据+获得反馈
     p.sendlineafter(tip, data)    //等待tip出现后发送
 
-3 
+3 接受数据
+    p.recv(n)             //接收n字节
+    p.recvline()          //接收一行
+    p.recvuntil(tip)      //接收到tip为止
+    p.recvall()           //接收所有数据
+
+4 开启交互
+    p.interactive()       //切换手动模式
