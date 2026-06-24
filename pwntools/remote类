@@ -1,0 +1,9 @@
+1 remote类是创建
+    p = remote('host',port)   //分别是域名和端口
+
+2 数据发送
+    p.send(data)    //发送原始数据
+    p.sendline(data)    //发送数据+获得反馈
+    p.sendlineafter(tip, data)    //等待tip出现后发送
+
+3 
