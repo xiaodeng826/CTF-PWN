@@ -1,0 +1,3 @@
+1 shellcraft本质上是一个类，但是没必要用对象，用自身就够了，所以是一个全局单例的类。shellcraft.a()是返回某段shellcode的汇编代码
+
+2 shellcraft.sh()     //汇编码对应功能:开启一个shell
