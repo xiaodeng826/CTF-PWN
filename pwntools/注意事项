@@ -1,0 +1,3 @@
+1 在脚本的最开始要先定位好程序的架构
+      32位    context.arch = "i386"
+      64位    context.arch = "amd64"
