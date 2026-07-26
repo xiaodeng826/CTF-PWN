@@ -1,5 +1,13 @@
+一、注意事项
 1 在脚本的最开始要先定位好程序的架构
       32位    context.arch = "i386"
       64位    context.arch = "amd64"
 
 2 用pwntools的中间层交互时，数据必须都是二进制类型的，要注意转化
+
+
+
+
+
+二、函数
+1 开启交互 interactive()
