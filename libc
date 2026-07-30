@@ -13,3 +13,4 @@
     %t$p：表示第t个参数
 
 7 system("/bin/sh")        ——开启shell
+  one_gadget    ——直接获取shell
