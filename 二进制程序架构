@@ -2,6 +2,8 @@
 	libc库是程序本体外的结构，不受PIE约束
 	ASLR会随机加载链接库、栈、堆之类的结构
 
+2	RELRO: No RELRO		表示got表不受保护
+
 
 
 
