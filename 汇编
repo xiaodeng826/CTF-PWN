@@ -5,6 +5,7 @@
   leave    ——等价于mov rsp, rbp，pop rbp。  效果：让rbp,rsp分别转而存放上一个栈帧的栈底和栈顶。、
   ret    ——等价于RIP = *(RSP) ,RSP += 4。  效果：把栈顶信息作为要执行的指令的地址，栈顶指针上移。
   xor    eax, eax  ——本质上是异或，效果是让eax的数据清零
+  lea rax, [rbp - 0xd0]    ——计算rbp - 0xd0地址是多少，把这个地址放入rax
 
 
 
