@@ -1,7 +1,7 @@
 汇编指令：
   sub a,b    ——就是把a减去b的数值
   call    ——汇编指令，会先把下一条指令的地址压入栈，然后进入对应函数
-  pop rbp    ——等价于mov rbp, [rsp]，add rsp, 8。 效果：让rbp转而存放栈顶的内容，rsp指向的地址向栈底移动8字节（具体和架构有关）。
+  pop rbp    ——等价于mov rbp, [rsp]，add rsp, 8。 效果：把栈顶数据弹给rbp，rsp指向的地址向栈底移动8字节（具体和架构有关）。
   leave    ——等价于mov rsp, rbp，pop rbp。  效果：让rbp,rsp分别转而存放上一个栈帧的栈底和栈顶。、
   ret    ——等价于RIP = *(RSP) ,RSP += 4。  效果：把栈顶信息作为要执行的指令的地址，栈顶指针上移。
   xor    eax, eax  ——本质上是异或，效果是让eax的数据清零
