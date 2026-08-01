@@ -6,6 +6,7 @@
   ret    ——等价于RIP = *(RSP) ,RSP += 4。  效果：把栈顶信息作为要执行的指令的地址，栈顶指针上移。
   xor    eax, eax  ——本质上是异或，效果是让eax的数据清零
   lea rax, [rbp - 0xd0]    ——计算rbp - 0xd0地址是多少，把这个地址放入rax
+  test eax, eax    ———用于判断eax里的值是正、负还是0.但是不会对值改变
 
 
 
