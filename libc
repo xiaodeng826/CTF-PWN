@@ -13,6 +13,7 @@
     %t$p：表示第t个参数
 
 7 system("/bin/sh")        ——开启shell
-  one_gadget    ——直接获取shell
 
 8 memset(目标地址, 填充值, 长度);
+
+9 __isoc99_scanf就是平时用的scanf函数
