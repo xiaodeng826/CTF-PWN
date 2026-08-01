@@ -16,4 +16,4 @@
 
 8 memset(目标地址, 填充值, 长度);
 
-9 __isoc99_scanf就是平时用的scanf函数
+9 __isoc99_scanf就是平时用的scanf函数。读取的是字符数据
