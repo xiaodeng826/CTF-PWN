@@ -16,4 +16,6 @@
 
 8 memset(目标地址, 填充值, 长度);
 
-9 __isoc99_scanf就是平时用的scanf函数。读取的是字符数据
+9 __isoc99_scanf就是平时用的scanf函数。读取的是字符数据。只有遇到空格，换行、tab、EOF才停止
+
+10 void *memcpy(void *dest, const void *src, size_t n);   从 src 指向的内存复制 n 个字节到 dest 指向的内存。
