@@ -25,8 +25,7 @@
 
 12 strcspn(const char *s1,const char *s2);    //返回s1中第一次出现s2的位置。从0开始。如果没有就返回字符串长度
 
-
-
+13 puts(local)    //puts会把local当作字符串首地址输出字符串
 
 
 
