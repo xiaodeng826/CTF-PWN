@@ -22,3 +22,30 @@
 10 void *memcpy(void *dest, const void *src, size_t n);   从 src 指向的内存复制 n 个字节到 dest 指向的内存。
 
 11 fgets(目标地址, 最大读取长度, 标准输入);    //会保留换行符
+
+12 strcspn(const char *s1,const char *s2);    //返回s2中第一次出现s1的位置。从0开始。如果没有就返回字符串长度
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
