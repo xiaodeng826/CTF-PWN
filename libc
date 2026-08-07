@@ -27,6 +27,7 @@
 
 13 puts(local)    //puts会把local当作字符串首地址输出字符串
 
+14 putchar()    //接受ASCII码，输出对饮字符
 
 
 
