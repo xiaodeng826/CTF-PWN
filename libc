@@ -32,6 +32,9 @@
 
 
 
+结构：
+  1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
+
 
 
 
