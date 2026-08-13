@@ -32,7 +32,7 @@
 
 14 putchar()    //接受ASCII码，输出对饮字符
 
-15 strcpy(目标地址, 源字符串);  
+15 strcpy(目标地址, 源字符串);  //复制字符串，知道‘\x00’
 
 结构：
   1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
