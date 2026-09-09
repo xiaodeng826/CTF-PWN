@@ -34,6 +34,8 @@
 
 15 strcpy(目标地址, 源字符串);  //复制字符串，知道‘\x00’
 
+16  alarm(0xf)    //程序运行15就关闭
+
 结构：
   1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
 
