@@ -36,6 +36,8 @@
 
 16  alarm(0xf)    //程序运行15就关闭
 
+17  mprotect((void *)((long)__buf + -0x10),0x1000,7);    //类似于授权函数，在buf-0x10开始，长度为0x1000，赋予权限7（可读，可写，可执行）
+
 结构：
   1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
 
