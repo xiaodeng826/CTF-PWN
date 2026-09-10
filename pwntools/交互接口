@@ -8,7 +8,7 @@
 
 3 接受数据
     p.recv(n)             //接收n字节
-    p.recvline()          //接收一行
+    p.recvline(n)          //接收n行
     p.recvuntil(tip)      //接收到tip为止
     p.recvall()           //接收所有数据
 
