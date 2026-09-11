@@ -4,13 +4,14 @@
   pop rbp    ——等价于mov rbp, [rsp]，add rsp, 8。 效果：把栈顶数据弹给rbp，rsp指向的地址向栈底移动8字节（具体和架构有关）。
   leave    ——等价于mov rsp, rbp，pop rbp。  效果：让rbp,rsp分别转而存放上一个栈帧的栈底和栈顶。、
   ret    ——等价于RIP = *(RSP) ,RSP += 4。  效果：把栈顶信息作为要执行的指令的地址，栈顶指针上移。
-  xor    eax, eax  ——本质上是异或，效果是让eax的数据清零 （相同为0，不同为1）
+  xor    eax, eax  ——本质上是异或，效果是让eax的数据清零 （相同为0，不同为1）.如果要清零rax,也可以xor eax,eax(高位自动清零)
   lea rax, [rbp - 0xd0]    ——计算rbp - 0xd0地址是多少，把这个地址放入rax
   test eax, eax    ———用于判断eax里的值是正、负还是0.但是不会对值改变
   or  ... , 0  ——把...上存的内容覆写为0
   test a,b  ——把a,b按位&操作，设置标记值。结果：0->zf=1 . 非0->zf=0
   je->zf=1时跳转。jne->zf=0时跳转
-
+  mov rax,59  ——把rax赋值为59（push 59 pop rax合起来也有相同效果。必要时更省字节）
+  cdq    ——在rax为正的情况下，能实现rdx清零效果
 
 寄存器：
   RSP    ——指向的是当前栈顶（也就是地址最低的那一项栈数据），通常也是最近一次压入栈的数据。
