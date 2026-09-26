@@ -43,6 +43,8 @@
 
 19  memcpy(目标地址，源地址，字节数)        //拷贝
 
+20  gets(local)函数会从标准输入读取一行字符串(\n截至)到local地址中，然后把\n换为\0。
+
 结构：
   1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
 
