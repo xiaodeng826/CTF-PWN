@@ -45,6 +45,8 @@
 
 20  gets(local)函数会从标准输入读取一行字符串(\n截至)到local地址中，然后把\n换为\0。
 
+21  atoi(str)解析十进制字符串str，转化为整型
+
 结构：
   1 __libc_start_main_ret  函数内部的一个点,call main 之后的地址 = main 返回地址
 
